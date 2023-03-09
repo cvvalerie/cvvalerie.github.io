@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&family=Roboto:ital,wght@0,100;0,500;1,100;1,500&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+:root {
+    --dark1: #2e3440;
+    --dark2: #3b4252;
+    --dark3: #434c5e;
+    --dark4: #4c566a;
+    --light1: #d8dee9;
+    --light2: #e5e9f0;
+    --light3: #eceff4;
+    --blue1: #8fbcbb;
+    --blue2: #88c0d0;
+    --blue3: #81a1c1;
+    --blue4: #5e81ac;
+    --red: #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --green: #a3be8c;
+    --purple: #b48ead;
+    --blanco: #ffffff;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --oscuro: #212121;
+
+}
+
+* {
+    font-family: "Roboto";
+    color: var(--dark1);
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    width: 960px;
+    margin: 0 auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    background: linear-gradient(200deg, var(--orange), var(--blanco));
+}
+#tit{
+    margin-left: 15px;
+}
+
+div {
+    padding-top: 10px;
+}
+
+img {
+    width: 310px;
+    height: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+body{
+    background: linear-gradient(180deg, var(--blanco), var(--blue1));
+    border-radius: 20px;
+}
+
+
+.nav-bg {
+    background-color: var(--secundario);
+    width: 960px;
+    margin: 0 auto;
+}
+
+.navegacion {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion a {
+    padding: 1rem 2rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navegacion a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion a:last-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+    .navegacion a {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+section {
+    width: 960px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 15px;
+ }
+
+.article {
+ 
+ background: linear-gradient(250deg, var(--secundario), var(--blanco));
+ border-radius: 20px;
+ height: auto;
+ max-width: 90%;
+ padding: 50px;
+ margin: 50px 20px 200px 80px;
+}
+
+li {
+     margin-bottom: 10px;
+}
+
+p {
+    margin-top: 0 auto;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+}
